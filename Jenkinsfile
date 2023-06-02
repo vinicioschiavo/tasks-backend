@@ -7,4 +7,11 @@ pipeline {
             }
         }
     }
+        stages {
+        stage ('Build Frontend') {
+            steps {
+                sh 'mvn clean package'
+            }
+        }
+    }
 }
